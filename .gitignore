@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+experiments/results/
+third_party_tau-bench/
+*.tar.gz
+
+# heavy artifacts
+experiments/*.json
+third_party_tau-bench/
+evolvebank.egg-info/
+PLAN.md
