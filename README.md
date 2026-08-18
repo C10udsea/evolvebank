@@ -1,4 +1,4 @@
-# EvolveBank 🧠→📚
+# EvolveBank
 
 **A self-evolving agent memory: your agent learns from every task it does — successes *and* failures — without any model training.**
 
