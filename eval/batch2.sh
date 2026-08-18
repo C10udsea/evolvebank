@@ -15,7 +15,7 @@ run_if_needed () {
     echo "=== $tag already complete, skipping ==="
   else
     echo "=== running/resuming $tag ==="
-    .venv/Scripts/python eval/run_selfevolve.py --tag "$tag" --resume "$@"
+    .venv/bin/python eval/run_selfevolve.py --tag "$tag" --resume "$@"
   fi
 }
 
