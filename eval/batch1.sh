@@ -13,7 +13,7 @@ run_if_needed () {  # $1 = tag, rest = args
   else
     rm -f "$log" experiments/bank_${tag}.json
     echo "=== running $tag ==="
-    .venv/Scripts/python eval/run_selfevolve.py --tag "$tag" "$@"
+    .venv/bin/python eval/run_selfevolve.py --tag "$tag" "$@"
   fi
 }
 
