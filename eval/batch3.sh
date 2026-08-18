@@ -10,7 +10,7 @@ BANK=experiments/bank_learn80.json
 [ -f "$BANK" ] || { echo "bank not found: $BANK"; exit 1; }
 
 unique_done () {
-  .venv/Scripts/python - "$1" <<'PY'
+  .venv/bin/python - "$1" <<'PY'
 import json, sys
 try:
     print(len({json.loads(l)["task_id"] for l in open(sys.argv[1], encoding="utf-8")}))
@@ -27,7 +27,7 @@ run_if_needed () {
     echo "=== $tag complete ($n/60 unique), skipping ==="
   else
     echo "=== running/resuming $tag ($n/60 unique) ==="
-    .venv/Scripts/python eval/run_selfevolve.py --tag "$tag" --resume "$@"
+    .venv/bin/python eval/run_selfevolve.py --tag "$tag" --resume "$@"
   fi
 }
 
