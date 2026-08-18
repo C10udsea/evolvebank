@@ -13,6 +13,8 @@ dependencies = [
 [project.optional-dependencies]
 eval = [
     "matplotlib",
+    "litellm",
+    "tau-bench @ git+https://github.com/sierra-research/tau-bench.git",
 ]
 local = [
     "sentence-transformers",
