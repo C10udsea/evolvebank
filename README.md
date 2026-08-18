@@ -67,7 +67,7 @@ bank.reflect(trajectory_messages, instruction, success=True)
 Three calls. Any agent loop, any LLM, any outcome signal. Strategies live in one portable JSON file.
 
 ```bash
-pip install -e .            # + sentence-transformers for local embeddings
+pip install -e ".[local,eval]"   # local embeddings + eval dependencies (litellm, tau-bench)
 export DEEPSEEK_API_KEY=sk-...
 ```
 
